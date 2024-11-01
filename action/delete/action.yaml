@@ -1,0 +1,20 @@
+name: Delete Secret
+description: Deletes a secret from a .env file
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.secret_name }}
+    - ${{ inputs.secret_file_path }}
+    - ${{ inputs.additional_args }}
+
+inputs:
+  secret_name:
+    description: The name of the secret to delete
+    required: true
+  secret_file_path:
+    description: Path to the .env file
+    required: true
+  additional_args:
+    description: Additional arguments to be passed to sops command, for example specifying the keys for encryption and decryption.
+    required: false

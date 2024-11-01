@@ -1,0 +1,21 @@
+name: Read Secret
+description: Reads secrets from a .env file and exports them as environment variables
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.secret_file_path }}
+    - ${{ inputs.include_pattern }}
+    - ${{ inputs.additional_args }}
+
+inputs:
+  secret_file_path:
+    description: Path to the .env file
+    required: true
+  include_pattern:
+    description: Regex pattern to filter which secrets to include
+    required: false
+    default: ".*"
+  additional_args:
+    description: Additional arguments to be passed to sops command, for example specifying the keys for encryption and decryption.
+    required: false
