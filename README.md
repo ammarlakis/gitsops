@@ -28,8 +28,7 @@ For a full example of GitSOPS in action, check out [gitsops-demo](https://github
 | **Read**       | `secret_file_path`| Required    | The path to the `.env` file.                                                                             |
 |                | `include_pattern` | Optional    | A regex pattern to filter which secrets to include (default is `".*"` to include all).                   |
 |                | `additional_args` | Optional    | Additional arguments for the `sops` command, such as specifying keys for encryption/decryption.          |
-| **Upsert**     | `sops_version`    | Optional    | The version of SOPS to use (default is `"latest"`).                                                      |
-|                | `secret_name`     | Required    | The name of the secret to add or update.                                                                 |
+| **Upsert**     | `secret_name`     | Required    | The name of the secret to add or update.                                                                 |
 |                | `secret_value`    | Required    | The value of the secret.                                                                                 |
 |                | `secret_file_path`| Required    | The path to the `.env` file.                                                                             |
 |                | `additional_args` | Optional    | Additional arguments for the `sops` command, such as specifying keys for encryption/decryption.          |
