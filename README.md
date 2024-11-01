@@ -38,12 +38,16 @@ For a full example of GitSOPS in action, check out [gitsops-demo](https://github
 - **Automate README Generation**: Automatically generate the README file with action descriptions and parameters.
 - **Add Release and Test Workflows**: Implement workflows to automate releases and testing.
 - **Optimize with Pre-built Docker Images** (under consideration): Use pre-built Docker images to improve performance and reduce build time on GitHub runners.
-- **Improve logging**: Use [GitHub Actions commands](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-a-debug-message) to set the logging message level.
+- **Improve Logging**: Use [GitHub Actions commands](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-a-debug-message) to set the logging message level.
 
 ## License
 
 This project is licensed under the MIT License.
 
----
+## Support Me
 
-GitSOPS provides a secure and automated way to manage secrets within Git repositories, utilizing SOPS for encryption and decryption. Contributions and suggestions are welcome!
+I create open-source code and write articles on [my website](https://ammarlakis.com) and [GitHub](https://github.com/ammarlakis), covering topics like automation, platform engineering, and smart home technology.
+
+If you’d like to support my work (or treat my cat to a tuna can!), you can do so here:
+
+[![Buy my cat a tuna can 😸](https://img.buymeacoffee.com/button-api/?text=Buy%20my%20cat%20a%20tuna%20can&emoji=%F0%9F%98%B8&slug=ammarlakis&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/ammarlakis)
