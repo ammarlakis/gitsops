@@ -1,6 +1,6 @@
 # GitSOPS
 
-**GitSOPS** is a collection of GitHub Actions for managing secrets in Git repositories securely, leveraging [SOPS](https://github.com/mozilla/sops) for encryption. GitSOPS enables easy and secure handling of secrets in dotenv files stored in Git by providing actions to **read**, **upsert** (add/update), and **delete** secrets.
+**GitSOPS** is a collection of GitHub Actions for managing secrets in Git repositories securely, leveraging [SOPS](https://github.com/getsops/sops) for encryption. GitSOPS enables easy and secure handling of secrets in dotenv files stored in Git by providing actions to **read**, **upsert** (add/update), and **delete** secrets.
 
 ## Features
 
@@ -39,6 +39,12 @@ For a full example of GitSOPS in action, check out [gitsops-demo](https://github
 - **Add Release and Test Workflows**: Implement workflows to automate releases and testing.
 - **Optimize with Pre-built Docker Images** (under consideration): Use pre-built Docker images to improve performance and reduce build time on GitHub runners.
 - **Improve Logging**: Use [GitHub Actions commands](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-a-debug-message) to set the logging message level.
+
+## Attribution and Disclaimer
+
+GitSOPS is an independent project developed to manage secrets in Git repositories using [SOPS](https://github.com/getsops/sops) for encryption. **GitSOPS is not affiliated with, endorsed by, or associated with or the SOPS project.** 
+
+GitSOPS leverages SOPS for secure encryption and decryption of secrets but is a separate toolset that integrates these capabilities into GitHub Actions for ease of use in CI/CD pipelines. For details on SOPS, please refer to the [SOPS documentation](https://github.com/getsops/sops).
 
 ## License
 
