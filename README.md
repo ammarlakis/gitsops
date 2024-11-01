@@ -39,6 +39,7 @@ For a full example of GitSOPS in action, check out [gitsops-demo](https://github
 - **Add Release and Test Workflows**: Implement workflows to automate releases and testing.
 - **Optimize with Pre-built Docker Images** (under consideration): Use pre-built Docker images to improve performance and reduce build time on GitHub runners.
 - **Improve Logging**: Use [GitHub Actions commands](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-a-debug-message) to set the logging message level.
+- **Handle Special Charachters**: Handle special charachters in user input.
 
 ## Attribution and Disclaimer
 
